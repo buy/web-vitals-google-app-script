@@ -116,7 +116,3 @@ function writeData(origin, pageType, url, desktop, mobile) {
     mobile.lighthouseResult.audits.interactive.numericValue,
   ]);
 }
-
-function getFastFCP(data) {
-  return data.loadingExperience.metrics.FIRST_CONTENTFUL_PAINT_MS.distributions[0].proportion;
-}
